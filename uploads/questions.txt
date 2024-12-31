@@ -1,0 +1,20 @@
+1. True or False: The proposed approach in the study is called Arabic Morphology Information Retrieval (AMIR).
+2. True or False: Arabic Information Retrieval (AIR) is straightforward due to the language's simple morphology.
+3. True or False: AMIR enhances stemming and morphological analysis by addressing issues like word ambiguity and affix handling.
+4. True or False: Existing tools for Arabic stemming have low error rates.
+5. True or False: Arabic morphology requires handling three types of affixes: prefixes, infixes, and suffixes.
+6. True or False: The AMIR system uses a dictionary of morphological patterns and grammatical rules for root extraction.
+7. True or False: AMIR can generate over 1,400 words from each root by adding affixes.
+8. True or False: AMIR does not validate whether removed letters are core root elements.
+9. True or False: AMIR effectively handles infixes, which are often neglected by other Arabic stemming tools.
+10. True or False: The study utilized a dataset of Arabic tweets for its experiments.
+11. True or False: AMIR had a Mean Average Precision (MAP) of 0.34%, outperforming LUCENE and FARASA.
+12. True or False: LUCENE achieved a higher MAP than AMIR when using the BM25 model.
+13. True or False: AMIR performed poorly in transforming plural forms into singular forms.
+14. True or False: The differences in MAP between AMIR and the no-stemmer approach were not statistically significant.
+15. True or False: AMIR showed the highest term frequency-inverse document frequency (TF.IDF) scores across evaluated queries.
+16. True or False: The study suggests that AMIR could be extended to handle informal Arabic forms.
+17. True or False: The AMIR system was compared only to the no-stemmer baseline in the experiments.
+18. True or False: AMIR's superior performance demonstrates its potential for advancing Arabic Information Retrieval systems.
+19. True or False: The research indicates that AMIR is less effective than traditional Arabic stemmers.
+20. True or False: The study emphasizes the importance of morphological rules in improving Arabic information retrieval accuracy.

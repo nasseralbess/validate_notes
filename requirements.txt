@@ -1,0 +1,9 @@
+openai
+langchain
+numpy
+usearch
+pystemmer
+bm25s
+pymupdf
+instructor
+Flask

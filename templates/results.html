@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation Results</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <div class="container mt-5">
+        <h1 class="text-center">Validation Results</h1>
+        <div class="mt-4">
+            <h3>True Answers</h3>
+            <div class="accordion" id="trueAccordion">
+                {% for result in results['True'] %}
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTrue{{ loop.index }}">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTrue{{ loop.index }}" aria-expanded="true" aria-controls="collapseTrue{{ loop.index }}">
+                            {{ result['question'] }}
+                        </button>
+                    </h2>
+                    <div id="collapseTrue{{ loop.index }}" class="accordion-collapse collapse" aria-labelledby="headingTrue{{ loop.index }}" data-bs-parent="#trueAccordion">
+                        <div class="accordion-body">
+                            <strong>Supporting Text:</strong>
+                            <p>{{ result['support_text'] }}</p>
+                            <strong>Reference context:</strong>
+                            <p>{{ result['original_context'] }}</p>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="mt-4">
+            <h3>False Answers</h3>
+            <div class="accordion" id="falseAccordion">
+                {% for result in results['False'] %}
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFalse{{ loop.index }}">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFalse{{ loop.index }}" aria-expanded="true" aria-controls="collapseFalse{{ loop.index }}">
+                            {{ result['question'] }}
+                        </button>
+                    </h2>
+                    <div id="collapseFalse{{ loop.index }}" class="accordion-collapse collapse" aria-labelledby="headingFalse{{ loop.index }}" data-bs-parent="#falseAccordion">
+                        <div class="accordion-body">
+                            <strong>Misalignment Text:</strong>
+                            <p>{{ result['misalignment_text'] }}</p>
+                            <strong>Reference context:</strong>
+                            <p>{{ result['original_context'] }}</p>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        <a href="/" class="btn btn-secondary mt-4">Back to Upload</a>
+    </div>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Summary and Detailed Files</title>

@@ -1,0 +1,62 @@
+Primary Diagnosis: Relapsed B-cell Acute Lymphocytic Leukemia (ALL), Low Risk, EOI: Negative MRD
+Secondary Diagnoses:
+
+Syrian refugee, living in refugee camp
+History of severe vomiting after anesthesia
+History of delayed MTX excretion
+History of recurrent pancytopenia/anemia
+History of septic shock requiring ICU admission
+Low TBNK flow
+Chemosensitivity for workup
+Suspected relapse
+Papilledema
+Overweight
+History of Presenting Illness:
+
+Z**********er is an ********** year old female with a history of low-risk B-cell ALL, who was off therapy as of 2023-12-12. She presented to the ER on 2024-10-15 with a one-month history of worsening headache, photophobia, and unsteady gait, along with polyuria. She was found to be hypertensive. A brain CT scan was unremarkable for acute intracranial pathology. She re-presented to the ER on 2024-10-16 with the same complaints. On examination, she had a sluggish left pupil, limited eye movement, multidirectional nystagmus, wide-based gait, and ataxia.
+
+Hospital Course:
+
+ER Visits (2024-10-15/16): Initial workup included a brain CT (negative) and peripheral flow showing 8% blasts. Ophthalmology was consulted and noted left eye exotropia, limited adduction, and papilledema, recommending treatment for increased intracranial pressure (ICP). Nephrology recommended starting amlodipine.
+Initial Admission (2024-10-16): Admitted to the floor and started on Keppra, Diamox, and amlodipine. A brain and orbit MRI was performed.
+ICU Transfer (2024-10-17 to 2024-10-23): Due to persistent hypertension despite hydralazine, the patient was transferred to the PICU. Oncology initiated dexamethasone and confirmed combined relapse (bone marrow biopsy showed 70% blasts, positive CNS involvement on LP). Chemotherapy and a second triple IT were held due to transaminitis. An echocardiogram showed a benign mild mitral valve prolapse. The patient developed SVT twice and received adenosine, after which propranolol was started. Hypertension was managed with hydralazine, amlodipine, and propranolol. LFTs showed rising transaminases but normal bilirubin, coagulation, glucose, and albumin. A liver ultrasound showed hepatosplenomegaly. Infectious disease was consulted for persistent tachycardia, and the patient was started on broad-spectrum antibiotics (Tazocin, Amikacin, then Meropenem, Vancomycin, and finally Cefepime). Blood and stool cultures were negative. CMV PCR was positive.
+Floor Transfer (2024-10-23 to 2024-10-26): The patient was transferred back to the floor after stabilization of blood pressure. LFTs began to trend down. Doxorubicin and Vincristine were administered. Port placement and PEGasparginase were planned for the day after discharge.
+Relevant Investigations:
+
+Brain CT (2024-10-15): No intracranial hemorrhage, midline shift, or herniation. Patent dual venous sinuses.
+Brain MRI (2024-10-17): Cranial nerve thickening with enhancement, involvement of cavernous sinus structures, pituitary stalk, and pharyngeal space, likely representing leukemic infiltration.
+Renal Doppler U/S (2024-10-17): Hepatosplenomegaly. Unremarkable renal Doppler scan.
+Abdominal U/S (2024-10-22): Mild hepatomegaly.
+Bone Marrow Biopsy (2024-10-17): 70% blasts.
+LP (2024-10-17): Positive for CNS involvement.
+Blood and Stool Cultures: Negative.
+CMV PCR: Positive (789).
+Labs: See attached lab results.
+Medications at Discharge:
+
+Oral and anal care
+Keppra
+Diamox
+Amlodipine
+Loratadine
+Propranolol
+Lansoprazole
+Paracetamol
+Bactrim prophylaxis
+Gabapentin
+Dexamethasone
+Discharge Instructions:
+
+Follow up with Hematology/Oncology as scheduled.
+Monitor blood pressure.
+Follow up on LFTs.
+Continue current medications as prescribed.
+Low bacterial diet.
+Discharge Planning:
+
+Estimated length of stay: 2 weeks.
+Goals of care: Continue chemotherapy treatment.
+No special needs upon discharge.
+Physician: Dina Hatem Izzeldeen Alkha, MD
+
+Note: This discharge summary is based on the provided information. Please ensure all relevant information is included and verify the accuracy of the details before finalizing the document. The pain assessment flowsheets were included as source material but not directly incorporated into the summary as they mainly provided details of pain management throughout the admission, which is already summarized in the hospital course.

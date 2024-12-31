@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <div class="container mt-5">
+        <h1 class="text-center">Upload Files for Validation</h1>
+        <form id="upload-form" action="/upload" method="post" enctype="multipart/form-data">
+            <div class="mb-3">
+                <label for="summary" class="form-label">Upload Summary File:</label>
+                <input type="file" class="form-control" id="summary" name="summary" required>
+            </div>
+            <div class="mb-3">
+                <label for="detailed" class="form-label">Upload Detailed File:</label>
+                <input type="file" class="form-control" id="detailed" name="detailed" required>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+The primary diagnosis of the patient is Relapsed B-cell Acute Lymphocytic Leukemia (ALL).
+The patient is categorized as low risk for B-cell ALL.
+The patient has negative minimal residual disease (MRD) status at the time of diagnosis.
+The patient is a Syrian refugee living in a refugee camp.
+The patient has a history of severe vomiting after anesthesia.
+The patient has experienced delayed MTX excretion in the past.
+The patient has a history of recurrent pancytopenia/anemia.
+The patient has had a history of septic shock requiring ICU admission.
+The patient exhibits low TBNK flow as part of their medical history.
+The patient presented to the ER with worsening headache, photophobia, and unsteady gait.
+The brain CT scan conducted was unremarkable for acute intracranial pathology.
+During the initial ER visits, peripheral flow showed 8% blasts present in the patient's blood.
+A follow-up MRI was performed on the brain and orbits after the patient's admission.
+The patient was treated for increased intracranial pressure after consultation with ophthalmology.
+Oncology confirmed combined relapse with the bone marrow biopsy showing 70% blasts and positive CNS involvement.
+The patient developed supraventricular tachycardia (SVT) and was treated with adenosine.
+The patient received broad-spectrum antibiotics during their hospital stay.
+The patient's liver function tests (LFTs) showed rising transaminases but normal bilirubin and glucose levels.
+The patient received Doxorubicin and Vincristine prior to discharge.
+The discharge instructions include a low bacterial diet and monitoring of blood pressure.
+The estimated length of stay for the patient was approximately 2 weeks.
