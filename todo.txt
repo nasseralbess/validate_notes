@@ -1,0 +1,1 @@
+Add checkboxes for the human evaluator to check on multiple notes alltogether

@@ -9,6 +9,7 @@ import instructor
 from pydantic import BaseModel, ValidationError
 import os
 import asyncio
+import json
 from dotenv import load_dotenv
 from typing import List
 from tqdm import tqdm
@@ -24,6 +25,7 @@ os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
 openai_client = instructor.from_openai(openai.OpenAI())
+jina_api_key = os.getenv("JINA_API_KEY")
 
 # Pydantic response model
 class ValidationResult(BaseModel):
@@ -48,19 +50,37 @@ def load_text(file_path, num_lines=15):
     text = ["\n".join(text[i:i+num_lines]) for i in range(0, len(text), num_lines)]
     return text
 
-def embed(text):
-    url = 'http://127.0.0.1:7997/embeddings'
-    auth = os.getenv("EMBEDDING_API_KEY")
-    body = {
-        "model": "Alibaba-NLP/gte-large-en-v1.5",
-        "encoding_format": "float",
-        "user": "string",
-        "dimensions": 0,
-        "input": [text],
-        "modality": "text"
-    }
-    response = requests.post(url, json=body, headers={'Authorization': f'Bearer {auth}'})
-    return response.json()['data'][0]['embedding']
+def embed(text, local=False, model=None):
+    if not local:
+        url = 'https://api.jina.ai/v1/embeddings'
+        
+        headers = {
+            'Content-Type': 'application/json',
+            'Authorization': f'Bearer {jina_api_key}'
+        }
+
+        data = {
+            "model": "jina-embeddings-v3",
+            "task": "text-matching",
+            "dimensions": 1024,
+            "late_chunking": False,
+            "embedding_type": "float",
+            "input": [text]
+        }
+        
+        response = requests.post(url, headers=headers, data=json.dumps(data))
+        try:
+            embedding = response.json()['data'][0]['embedding']
+            return embedding
+        except Exception as e:
+            raise e
+    else:
+        task_type = 'text-matching'
+        return model.encode(
+            [text],
+            task=task_type,
+            prompt_name=task_type,
+        ).squeeze().tolist()
 
 def generate_tf_questions(summary, n=20):
     prompt = f"""
@@ -160,12 +180,14 @@ async def process_files(summary_path, detailed_path):
         text = load_pdf(detailed_path)
     else:
         text = load_text(detailed_path)
+
     # Initialize indexes
     bm25, index = initialize_index(text)
 
     # Read summary content
     with open(summary_path, "r", encoding="utf-8") as f:
         summary = f.read()
+
     # Generate True/False questions
     questions = generate_tf_questions(summary)
 
@@ -195,8 +217,6 @@ async def process_files(summary_path, detailed_path):
             results["False"].append({"question": question, "error": e.json()})
 
     return results
-
-
 
 if __name__ == "__main__":
     app.run(debug=True)
